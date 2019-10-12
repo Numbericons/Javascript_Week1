@@ -62,12 +62,53 @@
 // console.log(isSubstring("cat in the hat", "cats"));
 // console.log(isSubstring("flappybird", "flap"));
 
-function fizzBuzz(arr) {
-  return arr.filter(num => {
-    if (num % 3 === 0) {
-      return (num % 5 === 0) ? 
-    }
-  })
+// function fizzBuzz(arr) {
+//   return arr.filter(num => {
+//     if (num % 3 === 0) {
+//       return (num % 5 !== 0);
+//     } else {
+//       return (num % 5 === 0)
+//     }
+//   })
+// }
+
+// console.log(fizzBuzz([2,4,3,7,9,15, 10]));
+
+const isPrime = function(n){
+  for(let i = 2;i <n;i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
 }
 
-console.log(fizzBuzz([2,4,3,7,9,15]));
+// console.log(isPrime(2));
+
+// console.log(isPrime(10));
+
+// console.log(isPrime(15485863));
+
+// console.log(isPrime(3548563));
+
+const sumOfNPrimes = (n) => {
+  if (n === 0) return 0;
+  let sum = 0;
+  let primes = [];
+  let i = 2;
+  while(primes.length < n) {
+    if (isPrime(i)) {
+      sum += i;
+      primes.push(i);
+    }
+    i++;
+  }
+  return sum;
+}
+
+console.log(sumOfNPrimes(0));
+// 0
+
+console.log(sumOfNPrimes(1));
+// 2
+
+console.log(sumOfNPrimes(4));
+// 17
