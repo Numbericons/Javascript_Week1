@@ -48,3 +48,10 @@
 //   console.log(x);
 // }
 // mysteryScoping5();
+
+function madLib(verb,noun,adjective){
+  return `We shall ${verb.toUpperCase()} the ${noun.toUpperCase()} ${adjective.toUpperCase()}.`
+}
+
+let x = madLib('Make',"best", "quac");
+console.log(x);
