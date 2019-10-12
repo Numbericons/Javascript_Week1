@@ -49,9 +49,25 @@
 // }
 // mysteryScoping5();
 
-function madLib(verb,noun,adjective){
-  return `We shall ${verb.toUpperCase()} the ${noun.toUpperCase()} ${adjective.toUpperCase()}.`
+// function madLib(verb,noun,adjective){
+//   return `We shall ${verb.toUpperCase()} the ${noun.toUpperCase()} ${adjective.toUpperCase()}.`
+// }
+
+// let x = madLib('Make',"best", "quac");
+// console.log(x);
+
+// const isSubstring = (string,substring) => {
+//   return string.includes(substring);
+// }
+// console.log(isSubstring("cat in the hat", "cats"));
+// console.log(isSubstring("flappybird", "flap"));
+
+function fizzBuzz(arr) {
+  return arr.filter(num => {
+    if (num % 3 === 0) {
+      return (num % 5 === 0) ? 
+    }
+  })
 }
 
-let x = madLib('Make',"best", "quac");
-console.log(x);
+console.log(fizzBuzz([2,4,3,7,9,15]));
