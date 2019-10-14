@@ -68,3 +68,32 @@ function deepDup(arr){
 // duped[5].push(5);
 // console.log(`now duped is ${duped}`);
 // console.log(array);
+
+function bsearch(arr, target) {
+  if (arr.length === 0) return -1;
+  let mid = Math.floor(arr.length / 2);
+  if (target === arr[mid]) {
+    return mid;
+  } else if (target < arr[mid]) {
+    return bsearch(arr.slice(0, mid),target);
+  } else {
+    let result = bsearch(arr.slice(mid+1), target);
+    if (result > -1) {
+      return mid + 1 + result;
+    } else {
+      return -1;
+    }
+  }
+}
+
+let searchArr = [1,2,3,4,5,6,7,8,9];
+console.log(bsearch(searchArr, 0));
+console.log('expected -1');
+console.log(bsearch(searchArr, 2));
+console.log('expected 1');
+console.log(bsearch(searchArr, 5));
+console.log('expected 4');
+console.log(bsearch(searchArr, 8));
+console.log('expected 7');
+console.log(bsearch(searchArr, 11));
+console.log('expected -1');
