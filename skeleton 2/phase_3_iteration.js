@@ -31,4 +31,4 @@ String.prototype.substrings = function() {
   return retArr;
 } 
 
-console.log("girlpower".substrings());
+// console.log("girlpower".substrings());
