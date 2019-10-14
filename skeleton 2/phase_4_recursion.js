@@ -87,13 +87,13 @@ function bsearch(arr, target) {
 }
 
 let searchArr = [1,2,3,4,5,6,7,8,9];
-console.log(bsearch(searchArr, 0));
-console.log('expected -1');
-console.log(bsearch(searchArr, 2));
-console.log('expected 1');
-console.log(bsearch(searchArr, 5));
-console.log('expected 4');
-console.log(bsearch(searchArr, 8));
-console.log('expected 7');
-console.log(bsearch(searchArr, 11));
-console.log('expected -1');
+// console.log(bsearch(searchArr, 0));
+// console.log('expected -1');
+// console.log(bsearch(searchArr, 2));
+// console.log('expected 1');
+// console.log(bsearch(searchArr, 5));
+// console.log('expected 4');
+// console.log(bsearch(searchArr, 8));
+// console.log('expected 7');
+// console.log(bsearch(searchArr, 11));
+// console.log('expected -1');
