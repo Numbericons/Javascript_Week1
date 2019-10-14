@@ -39,6 +39,6 @@ let div = function(num1, num2) {
 let add = function(num1, num2) {
   return num1 + num2;
 }
-console.log(arr2.myReduce(mult, 10));
-console.log(arr2.myReduce(div, 10));
-console.log(arr2.myReduce(add, 10));
+// console.log(arr2.myReduce(mult, 10));
+// console.log(arr2.myReduce(div, 10));
+// console.log(arr2.myReduce(add, 10));
