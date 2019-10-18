@@ -12,7 +12,7 @@ const callback = function(arr){
   })
 }
 
-// titleize(["Mary", "Brian", "Leo"], callback);
+titleize(["Mary", "Brian", "Leo"], callback);
 
 function Elephant(name, height) {
   this.name = name;
@@ -46,9 +46,6 @@ console.log(ele.height);
 ele.addTrick("painting a picture");
 ele.addTrick("jumping through hoops");
 ele.addTrick("smashing a watermelon");
-ele.play();
-ele.play();
-ele.play();
 ele.play();
 ele.play();
 ele.play();
