@@ -48,4 +48,13 @@ export default class Board{
   won(mark){
     return crossWin(mark) || diagWin(mark);
   }
+
+  tie(){
+    for(let i=0; i< 3; i++) {
+      for(let j=0; j< 3; j++) {
+        if (!this.empty([i, j])) return false;
+      }
+    }
+    return true;
+  }
 }
